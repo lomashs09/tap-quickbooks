@@ -82,8 +82,7 @@
     {"name": "TxnDate", "type": "string"},
     {"name": "CreditCardPayment", "type": "string"},
     {"name": "MetaData", "type": "string"},
-    {"name": "TaxExemptionRef", "type": "string"},
-    {"name": "PaymentRefNum", "type": "string"}
+    {"name": "TaxExemptionRef", "type": "string"}
   ],
 
   "Transfer": [
@@ -228,9 +227,7 @@
     {"name": "PrimaryEmailAddr", "type": "string"},
     {"name": "PrimaryPhone", "type": "string"},
     {"name": "AlternatePhone", "type": "string"},
-    {"name": "Fax", "type": "string"},
-    {"name": "PrimaryTaxIdentifier", "type": "string"},
-    {"name": "TaxExemptionReasonId", "type": "string"}
+    {"name": "Fax", "type": "string"}
   ],
 
   "Employee": [
@@ -288,8 +285,7 @@
     {"name": "ExchangeRate", "type": "number"},
     {"name": "HomeBalance", "type": "number"},
     {"name": "HomeTotalAmt", "type": "number"},
-    {"name": "LinkedTxn", "type": "string"},
-    {"name": "DepartmentRef", "type": "string"}
+    {"name": "LinkedTxn", "type": "string"}
   ],
   "Item": [
     {"name": "Name", "type": "string"},
@@ -314,8 +310,7 @@
     {"name": "Barcode", "type": "string"},
     {"name": "Description", "type": "string"},
     {"name": "PurchaseDesc", "type": "string"},
-    {"name": "ExpenseAccountRef", "type": "string"},
-    {"name": "ClassRef", "type": "string"}
+    {"name": "ExpenseAccountRef", "type": "string"}
 
   ],
   "JournalEntry": [
@@ -722,53 +717,5 @@
     {"name": "SyncToken", "type": "string"},
     {"name": "MetaData", "type": "string"},
     {"name": "AttachableRef", "type": "array","child_type": "string"}
-  ],
-  "CompanyCurrency": [
-    {"name": "Id", "type": "string"},
-    {"name": "Name", "type": "string"},
-    {"name": "Code", "type": "string"},
-    {"name": "Active", "type": "boolean"},
-    {"name": "domain", "type": "string"},
-    {"name": "sparse", "type": "boolean"},
-    {"name": "SyncToken", "type": "string"},
-    {"name": "MetaData", "type": "string"}
-  ],
-  "PurchaseOrder": [
-    {"name": "Id", "type": "string"},
-    {"name": "EmailStatus", "type": "string"},
-    {"name": "POStatus", "type": "string"},
-    {"name": "domain", "type": "string"},
-    {"name": "sparse", "type": "boolean"},
-    {"name": "SyncToken", "type": "string"},
-    {"name": "MetaData", "type": "string"},
-    {"name": "CustomField", "type": "array", "child_type": "string"},
-    {"name": "DocNumber", "type": "string"},
-    {"name": "TxnDate", "type": "string"},
-    {"name": "CurrencyRef", "type": "string"},
-    {"name": "ExchangeRate", "type": "string"},
-    {"name": "LinkedTxn", "type": "array", "child_type": "string"},
-    {"name": "Line", "type": "array", "child_type": "string"},
-    {"name": "VendorRef", "type": "string"},
-    {"name": "APAccountRef", "type": "string"},
-    {"name": "TotalAmt", "type": "string"},
-    {"name": "Memo", "type": "string"}
-  ],
-  "VendorCredit": [
-    {"name": "Id", "type": "string"},
-    {"name": "Balance", "type": "string"},
-    {"name": "domain", "type": "string"},
-    {"name": "sparse", "type": "boolean"},
-    {"name": "SyncToken", "type": "string"},
-    {"name": "MetaData", "type": "string"},
-    {"name": "DocNumber", "type": "string"},
-    {"name": "TxnDate", "type": "string"},
-    {"name": "DepartmentRef", "type": "string"},
-    {"name": "CurrencyRef", "type": "string"},
-    {"name": "ExchangeRate", "type": "string"},
-    {"name": "PrivateNote", "type": "string"},
-    {"name": "Line", "type": "array", "child_type": "string"},
-    {"name": "VendorRef", "type": "string"},
-    {"name": "APAccountRef", "type": "string"},
-    {"name": "TotalAmt", "type": "string"} 
   ]
 }
